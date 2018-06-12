@@ -57,7 +57,7 @@ kitty - A terminal emulator
 
 
 %build
-pip3 install sphinx
+pip3 install --user sphinx
 python3 setup.py --verbose linux-package --debug --libdir-name %{_lib}
 
 
