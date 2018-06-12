@@ -18,6 +18,7 @@ BuildRequires: python3-devel >= 3.5.0 harfbuzz-devel >= 1.5.0 zlib pkg-config
 BuildRequires: libpng-devel freetype-devel fontconfig-devel libXcursor-devel
 BuildRequires: libXrandr-devel libXinerama-devel libxkbcommon-x11-devel
 BuildRequires: mesa-libGL-devel libXi-devel
+BuildRequires: python2-sphinx
 # Add (gcc | clang) in the BuildRequires
 
 Requires: harfbuzz libpng freetype fontconfig
