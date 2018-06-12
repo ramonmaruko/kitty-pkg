@@ -85,7 +85,6 @@ cp -r linux-package/* %{buildroot}/usr
 %doc %{_docdir}/kitty/html/*/*.txt
 %doc %{_docdir}/kitty/html/*/*.png
 %doc %{_docdir}/kitty/html/*/*.gif
-%doc %{_docdir}/kitty/html/*/*.inv
 %license LICENSE
 
 %changelog
