@@ -18,7 +18,12 @@ BuildRequires: python3-devel >= 3.5.0 harfbuzz-devel >= 1.5.0 zlib pkg-config
 BuildRequires: libpng-devel freetype-devel fontconfig-devel libXcursor-devel
 BuildRequires: libXrandr-devel libXinerama-devel libxkbcommon-x11-devel
 BuildRequires: mesa-libGL-devel libXi-devel
-BuildRequires: python2-sphinx
+# Pip is only used to install python3-sphinx,
+# this is probably not the best method
+BuildRequires: python3-pip
+# Wayland-protocols-devel is probably not used when running on X11
+# It's probably better to create 2 packages for X11 and Wayland
+BuildRequires: wayland-protocols-devel
 # Add (gcc | clang) in the BuildRequires
 
 Requires: harfbuzz libpng freetype fontconfig
@@ -52,6 +57,7 @@ kitty - A terminal emulator
 
 
 %build
+pip3 install sphinx
 python3 setup.py --verbose linux-package --debug --libdir-name %{_lib}
 
 
