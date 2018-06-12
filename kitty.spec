@@ -78,7 +78,7 @@ cp -r linux-package/* %{buildroot}/usr
 %{_datadir}/icons/hicolor/256x256/apps/kitty.png
 %{_datadir}/man/man1/kitty.1.gz
 %doc CHANGELOG.rst README.asciidoc
-%doc %{_docdir}/kitty/html/*
+%doc %{_docdir}/kitty/html/.*
 %doc %{_docdir}/kitty/html/*/*.txt
 %doc %{_docdir}/kitty/html/*/*.png
 %doc %{_docdir}/kitty/html/*/*.css
