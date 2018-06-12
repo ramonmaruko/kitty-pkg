@@ -1,4 +1,4 @@
-%define version_string 0.10.1
+%define version_string 0.11.0
 
 %global __python %{__python3}
 %global git_rev  v%{version_string}
@@ -6,7 +6,7 @@
 
 Name:           kitty
 Version:        %{version_string}
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        A modern, hack-able, feature full, OpenGL-based terminal emulator
 
 License:        GPLv3
@@ -73,7 +73,10 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
-* Wed Jun 6 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.10.1-1
+* Tue Jun 12 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.0-1
+- Upgrade to release 0.11.0
+
+* Wed Jun 6 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.10.1-2
 - Lint the rpm and specify ExclusiveArch
 
 * Fri May 25 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.10.1-1
