@@ -76,15 +76,9 @@ cp -r linux-package/* %{buildroot}/usr
 %{_datadir}/applications/kitty.desktop
 %{_datadir}/terminfo/x/xterm-kitty
 %{_datadir}/icons/hicolor/256x256/apps/kitty.png
-%{_mandir}/man1/kitty.1.gz
+%doc %{_mandir}/man1/kitty.1.gz
 %doc CHANGELOG.rst README.asciidoc
-%doc %{_docdir}/kitty/html/.*
-%doc %{_docdir}/kitty/html/*/*.html
-%doc %{_docdir}/kitty/html/*/*.css
-%doc %{_docdir}/kitty/html/*/*.js
-%doc %{_docdir}/kitty/html/*/*.txt
-%doc %{_docdir}/kitty/html/*/*.png
-%doc %{_docdir}/kitty/html/*/*.gif
+%doc %{_docdir}/kitty
 %license LICENSE
 
 %changelog
