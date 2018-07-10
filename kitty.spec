@@ -88,7 +88,7 @@ cp -r linux-package/* %{buildroot}/usr
 * Mon Jul 2 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.2-1
 - Upgrade to release 0.11.2
 
-* Sun Jun 15 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.1-1
+* Sun Jun 17 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.1-1
 - Upgrade to release 0.11.1
 
 * Tue Jun 12 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.0-1
