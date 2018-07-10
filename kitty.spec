@@ -6,7 +6,7 @@
 
 Name:           kitty
 Version:        %{version_string}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A modern, hack-able, feature full, OpenGL-based terminal emulator
 
 License:        GPLv3
@@ -82,6 +82,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Mon Jul 2 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.2-2
+- Rebuild to use Python 3.7
+
 * Mon Jul 2 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.2-1
 - Upgrade to release 0.11.2
 
