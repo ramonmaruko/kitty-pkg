@@ -82,7 +82,7 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
-* Mon Jul 2 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.2-2
+* Mon Jul 9 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.2-2
 - Rebuild to use Python 3.7
 
 * Mon Jul 2 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.2-1
