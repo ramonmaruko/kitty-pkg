@@ -6,7 +6,7 @@
 
 Name:           kitty
 Version:        %{version_string}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A modern, hack-able, feature full, OpenGL-based terminal emulator
 
 License:        GPLv3
@@ -14,6 +14,7 @@ URL:            https://github.com/kovidgoyal/kitty
 Source0:        https://github.com/kovidgoyal/%{name}/archive/%{git_rev}.tar.gz
 ExclusiveArch:      x86_64
 
+BuildRequires: gcc
 BuildRequires: python3-devel >= 3.5.0 harfbuzz-devel >= 1.5.0 zlib pkg-config
 BuildRequires: libpng-devel freetype-devel fontconfig-devel libXcursor-devel
 BuildRequires: libXrandr-devel libXinerama-devel libxkbcommon-x11-devel
@@ -82,6 +83,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Wed Jul 11 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.3-2
+- Add gcc to BuildRequires
+
 * Wed Jul 11 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.3-1
 - Upgrade to release 0.11.3
 
