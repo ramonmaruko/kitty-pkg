@@ -26,7 +26,7 @@ BuildRequires: python3-pip
 # It's probably better to create 2 packages for X11 and Wayland
 BuildRequires: wayland-protocols-devel
 # Add (gcc | clang) in the BuildRequires
-BuildRequires: dbus-devel-1
+BuildRequires: dbus-devel
 
 Requires: harfbuzz libpng freetype fontconfig
 
@@ -86,7 +86,7 @@ cp -r linux-package/* %{buildroot}/usr
 %changelog
 * Tue Sep 04 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.12.0-1
 - Upgrade to release 0.12.0
-- Add dbus-devel-1 to the BuildRequires
+- Add dbus-devel to the BuildRequires
 
 * Wed Jul 11 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.11.3-2
 - Add gcc to BuildRequires
