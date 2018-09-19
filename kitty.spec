@@ -1,4 +1,4 @@
-%define version_string 0.12.0
+%define version_string 0.12.1
 
 %global __python %{__python3}
 %global git_rev  v%{version_string}
@@ -84,6 +84,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Wed Sep 19 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.12.1-1
+- Upgrade to release 0.12.1
+
 * Tue Sep 04 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.12.0-1
 - Upgrade to release 0.12.0
 - Add dbus-devel to the BuildRequires
