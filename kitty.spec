@@ -1,4 +1,4 @@
-%define version_string 0.13.1
+%define version_string 0.13.2
 
 %global __python %{__python3}
 %global git_rev  v%{version_string}
@@ -84,6 +84,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Fri Jan 04 2019 Gerry Agbobada <gagbobada@gmail.com> - 0.13.2-1
+- Upgrade to release 0.13.2
+
 * Sun Dec 09 2018 Gerry Agbobada <gagbobada@gmail.com> - 0.13.1-1
 - Upgrade to release 0.13.1
 
