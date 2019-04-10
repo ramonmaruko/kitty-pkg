@@ -56,7 +56,7 @@ kitty - A terminal emulator
 
 
 %prep
-%autosetup -v -n %{name}-%{version_string}
+%autosetup -v -n %{name}-%{commit}
 
 
 %build
