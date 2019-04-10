@@ -85,7 +85,7 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
-* Sat Apr 11 2019 Ramon Marco Layam Navarro <marco@ramonmarco.codes> - 0.14.0-0.189692064
+* Thu Apr 11 2019 Ramon Marco Layam Navarro <marco@ramonmarco.codes> - 0.14.0-0.189692064
 - Upgrade to pre-release 0.14.0 89692064503ccfbb66374a42d63401a96511501f
 
 * Sat Jan 19 2019 Gerry Agbobada <gagbobada@gmail.com> - 0.13.3-1
