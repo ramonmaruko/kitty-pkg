@@ -1,17 +1,18 @@
-%define version_string 0.13.3
+%define version_string 0.14.0
 
 %global __python %{__python3}
-%global git_rev  v%{version_string}
-%global checkout %{git_date}git%(c=%{git_rev}; echo ${c:0:7})
+%global commit 89692064503ccfbb66374a42d63401a96511501f
+%global gittag refs/heads/master
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           kitty
 Version:        %{version_string}
-Release:        1%{?dist}
+Release:        0.1%{shortcommit}
 Summary:        A modern, hack-able, feature full, OpenGL-based terminal emulator
 
 License:        GPLv3
 URL:            https://github.com/kovidgoyal/kitty
-Source0:        https://github.com/kovidgoyal/%{name}/archive/%{git_rev}.tar.gz
+Source0:        https://github.com/kovidgoyal/kitty/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 ExclusiveArch:      x86_64
 
 BuildRequires: gcc
@@ -84,6 +85,9 @@ cp -r linux-package/* %{buildroot}/usr
 %license LICENSE
 
 %changelog
+* Sat Apr 11 2019 Ramon Marco Layam Navarro <marco@ramonmarco.codes> - 0.14.0-0.189692064
+- Upgrade to pre-release 0.14.0 89692064503ccfbb66374a42d63401a96511501f
+
 * Sat Jan 19 2019 Gerry Agbobada <gagbobada@gmail.com> - 0.13.3-1
 - Upgrade to release 0.13.3
 
